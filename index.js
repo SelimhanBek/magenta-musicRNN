@@ -7,7 +7,7 @@ const { midi, Note } = Tonal;
 
 const sequence = {
   ticksPerQuarter: 220,
-  totalTime: 58,
+  totalTime: 20,
   timeSignatures: [
     {
       time: 0,
@@ -22,13 +22,16 @@ const sequence = {
     },
   ],
   notes: [
-    { pitch: midi("A4"), startTime: 0, endTime: 2 },
-    { pitch: midi("B4"), startTime: 2, endTime: 4 },
-    { pitch: midi("C4"), startTime: 4, endTime: 6 },
-    { pitch: midi("D4"), startTime: 6, endTime: 8 },
-    { pitch: midi("E4"), startTime: 8, endTime: 10 },
-    { pitch: midi("F4"), startTime: 10, endTime: 12 },
-    { pitch: midi("G4"), startTime: 12, endTime: 14 },
+    {pitch: midi('A3'), startTime: 0, endTime: 4},
+    {pitch: midi('D4'), startTime: 4, endTime: 6},
+    {pitch: midi('E4'), startTime: 6, endTime: 8},
+    {pitch: midi('F4'), startTime: 8, endTime: 10},
+    {pitch: midi('D4'), startTime: 10, endTime: 12},
+    {pitch: midi('E4'), startTime: 12, endTime: 16},
+    {pitch: midi('C4'), startTime: 16, endTime: 20},
+    {pitch: midi('D4'), startTime: 20, endTime: 26},
+    {pitch: midi('A3'), startTime: 26, endTime: 28},
+    {pitch: midi('A3'), startTime: 28, endTime: 32}
     // { pitch: midi("Gb4"), startTime: 0, endTime: 1 },
     // { pitch: midi("F4"), startTime: 1, endTime: 3.5 },
     // { pitch: midi("Ab4"), startTime: 3.5, endTime: 4 },
